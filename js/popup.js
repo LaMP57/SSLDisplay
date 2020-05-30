@@ -3,9 +3,10 @@
 	if(tab.url.indexOf("https")===0){
 		var url = new URL(tab.url)
 		var domain = url.hostname
+		var port = url.port
 		$.get(
 			"https://cert.catbox.io/api/v1/query",
-			{domain: domain, port: "443"},
+			{domain: domain, port: port},
 			function(data) {
 				document.getElementById('subjectCN').innerHTML = data.Subject.CN;
 				document.getElementById('subjectO').innerHTML = data.Subject.O;
