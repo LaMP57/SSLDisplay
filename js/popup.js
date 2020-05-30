@@ -3,7 +3,11 @@
 	if(tab.url.indexOf("https")===0){
 		var url = new URL(tab.url)
 		var domain = url.hostname
-		var port = url.port
+		if (url.port != "") {
+			var port = url.port
+		} else {
+			var port = "443"
+		}
 		$.get(
 			"https://cert.catbox.io/api/v1/query",
 			{domain: domain, port: port},
@@ -15,6 +19,9 @@
 				document.getElementById('notBefore').innerHTML = data.NotBefore;
 				document.getElementById('notAfter').innerHTML = data.NotAfter;
 				document.getElementById('altName').innerHTML = data.AltName;
+				if (data.Subject.O == "") {
+				    document.getElementById('subjectOLine').style.display = 'none';
+				}
 			},
 			"json"
 		);
