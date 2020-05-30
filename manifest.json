@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "SSL Display",
+	"version": "0.1",
+	"description": "快速查看网站SSL证书",
+	"author": "LaMP",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"permissions": ["tabs"],
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	}
+}

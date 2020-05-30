@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>SSL Display</title>
+	<link rel="stylesheet" href="css/mdui.min.css">
+</head>
+<body style="width:500px; min-height:100px;">
+	<div class="mdui-table-fluid">
+	  <table class="mdui-table">
+	    <tbody>
+	      <tr>
+	        <td style="width: 120px;">使用者</td>
+	        <td id="subjectCN"></td>
+	      </tr>
+	      <tr>
+	        <td>使用者组织</td>
+	        <td id="subjectO"></td>
+	      </tr>
+	      <tr>
+	        <td>颁发者</td>
+	        <td id="issuerCN"></td>
+	      </tr>
+	      <tr>
+	        <td>颁发者组织</td>
+	        <td id="issuerO"></td>
+	      </tr>
+	      <tr>
+	        <td>生效日期</td>
+	        <td id="notBefore"></td>
+	      </tr>
+	      <tr>
+	        <td>过期日期</td>
+	        <td id="notAfter"></td>
+	      </tr>
+	      <tr>
+	        <td>替代名称</td>
+	        <td id="altName"></td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
