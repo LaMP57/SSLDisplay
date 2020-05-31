@@ -20,7 +20,7 @@
 				document.getElementById('altName').innerHTML = data.AltName;
 				document.getElementById('algorithm').innerHTML = data.Algorithm;
 				document.getElementById('SN').innerHTML = data.SN;
-				document.getElementById('SHA256').innerHTML = '<a href="https://crt.sh/?q=' + data.SHA256 + '" style="float: right; padding-right: 100px;">' + data.SHA256.substring(0, 29) + '...</a>';
+				document.getElementById('SHA256').innerHTML = '<a href="https://crt.sh/?q=' + data.SHA256 + '">' + data.SHA256.substring(0, 29) + '...</a>';
 				document.getElementById('subjectO').innerHTML = data.Subject.O;
 				if (data.Subject.O == "") {
 				    document.getElementById('subjectOLine').style.display = 'none';
