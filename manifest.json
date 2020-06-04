@@ -1,9 +1,10 @@
 {
 	"manifest_version": 2,
 	"name": "SSL Display",
-	"version": "0.1.1",
-	"description": "快速查看网站SSL证书",
+	"version": "0.1.2",
+	"description": "__MSG_extDesp__",
 	"author": "LaMP",
+	"default_locale": "en",
 	"icons":
 	{
 		"48": "icon.png",

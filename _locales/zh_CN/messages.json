@@ -1,0 +1,13 @@
+{
+	"extDesp": {"message": "一键查看网站SSL证书信息"},
+    "subjectCN": {"message": "使用者"},
+    "subjectO": {"message": "使用者组织"},
+    "issuerCN": {"message": "颁发者"},
+    "issuerO": {"message": "颁发者组织"},
+    "notBefore": {"message": "生效日期"},
+    "notAfter": {"message": "过期日期"},
+    "SAN": {"message": "可选名称"},
+    "algorithm": {"message": "签名算法"},
+    "SN": {"message": "序列号"},
+    "SHA256": {"message": "SHA256"}
+}

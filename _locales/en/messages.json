@@ -1,0 +1,13 @@
+{
+	"extDesp": {"message": "Show SSL certificate information"},
+    "subjectCN": {"message": "Common name"},
+    "subjectO": {"message": "Organization"},
+    "issuerCN": {"message": "Issuer"},
+    "issuerO": {"message": "Issuer\norganization"},
+    "notBefore": {"message": "Valid from"},
+    "notAfter": {"message": "Valid until"},
+    "SAN": {"message": "SAN"},
+    "algorithm": {"message": "Algorithm"},
+    "SN": {"message": "Serial number"},
+    "SHA256": {"message": "SHA256"}
+}

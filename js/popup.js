@@ -1,4 +1,9 @@
-﻿chrome.tabs.query({active:true, currentWindow: true}, function (tabs){
+﻿$('[data-i18n-content]').each(function() {
+	var message = chrome.i18n.getMessage(this.getAttribute('data-i18n-content'));
+	$(this).html(message);
+});
+
+chrome.tabs.query({active:true, currentWindow: true}, function (tabs){
 	var tab = tabs[0];
 	if(tab.url.indexOf("https")===0){
 		var url = new URL(tab.url)
